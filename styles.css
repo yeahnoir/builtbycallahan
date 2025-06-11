@@ -4,7 +4,6 @@
   --navy: #0f1a2b;
   --gold: #f5c16c;
   --white: #ffffff;
-  --gold: #d4af37;
 }
 
 * {
@@ -297,7 +296,6 @@ ul li {
 .btn-tier:hover {
   background-color: #f2c94c;
   }
-}
 
 .add-ons {
   margin-top: 60px;
