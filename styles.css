@@ -74,6 +74,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   animation: shine 5s linear infinite;
+  margin-top: -10px;
   margin-bottom: 30px;
 }
 
@@ -140,6 +141,45 @@ body {
   box-shadow: 0 0 12px var(--gold);
 }
 
+.section-whatido {
+  background-color: #1c1c1e;
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.section-whatido h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--gold);
+  margin-bottom: 30px;
+}
+
+.section-whatido p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.section-whatido strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .services {
   padding: 80px 20px;
   background-color: #121f34;
@@ -190,4 +230,4 @@ body {
   background-color: #0a1423;
   font-size: 0.85rem;
   color: #aaa;
-} 
+}
