@@ -298,6 +298,44 @@ ul li {
   background-color: #f2c94c;
 }
 
+.add-ons {
+  margin-top: 60px;
+  padding: 30px 20px;
+  background-color: #101214;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.add-ons-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.add-ons-intro {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-ons-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  color: var(--white);
+  font-size: 0.95rem;
+}
+
+.add-ons-list li {
+  margin-bottom: 12px;
+}
+
 .footer {
   text-align: center;
   padding: 30px 0;
