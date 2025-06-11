@@ -142,7 +142,9 @@ body {
 }
 
 .section-whatido {
-  background: linear-gradient(to right, #0f1a2b, #162538);
+  background-color: #111316;
+  background-image: radial-gradient(circle at 1px 1px, #222 1px, transparent 0);
+  background-size: 12px 12px;
   color: var(--white);
   padding: 80px 20px;
   text-align: left;
