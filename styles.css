@@ -18,6 +18,13 @@ body {
 /* --------------------
    Hero Section
 --------------------- */
+.logo {
+  width: 180px;
+  max-width: 90%;
+  margin-bottom: 30px;
+  filter: brightness(0) invert(1); /* optional: makes dark logos white-ish on dark bg */
+}
+
 .hero {
   height: 100vh;
   display: flex;
