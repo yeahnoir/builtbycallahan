@@ -1,8 +1,8 @@
-/* Built By Callahan - styles.css */
+/* Built By Callahan - Master CSS */
 
 :root {
   --navy: #0f1a2b;
-  --gold: #f5c16c;
+  --gold: #d4af37;
   --white: #ffffff;
 }
 
@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -87,60 +88,7 @@ body {
   }
 }
 
-.particles span {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
-  opacity: 0.15;
-  animation: float 12s infinite ease-in-out;
-}
-.particles span:nth-child(1) {
-  top: 10%;
-  left: 15%;
-  animation-delay: 0s;
-}
-.particles span:nth-child(2) {
-  top: 50%;
-  left: 45%;
-  animation-delay: 2s;
-}
-.particles span:nth-child(3) {
-  top: 80%;
-  left: 70%;
-  animation-delay: 4s;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.1);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-
-.cta-btn {
-  padding: 12px 28px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: var(--gold);
-  color: var(--navy);
-  box-shadow: 0 0 12px var(--gold);
-}
-
+/* What I Do Section */
 .section-whatido-wrapper {
   background-color: #111316;
   background-image: radial-gradient(circle at 1px 1px, #222 1px, transparent 0);
@@ -185,7 +133,7 @@ body {
   }
 }
 
- /* SERVICES SECTION - Updated for 3x2 layout, hover effects, and polished design */
+/* Services Section */
 .services-section {
   padding: 100px 20px;
   background-color: #0f0f11;
@@ -213,16 +161,10 @@ body {
 
 .service-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (min-width: 900px) {
-  .service-cards {
-    grid-template-columns: repeat(3, 1fr); /* 3 per row on desktop */
-  }
 }
 
 .service-card {
@@ -231,11 +173,17 @@ body {
   border-radius: 16px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1.2s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-in-out forwards;
 }
+
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+.service-card:nth-child(6) { animation-delay: 0.6s; }
 
 .service-card:hover {
   transform: translateY(-6px);
@@ -299,26 +247,18 @@ ul li {
   background-color: #f2c94c;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ADD-ONS SECTION */
+/* Add-ons Section */
 .add-ons {
-  width: 100%;
-  background-color: #0f0f11; /* match services section background */
-  padding: 60px 20px 40px;
-  border-radius: 0;
-  box-shadow: none;
-  margin-top: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.05); /* subtle divider */
+  margin-top: 80px;
+  padding: 40px 20px;
+  background-color: #101214;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .add-ons-title {
@@ -326,13 +266,11 @@ ul li {
   color: var(--gold);
   font-size: 1.8rem;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .add-ons-intro {
   font-size: 1rem;
   color: #ccc;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -342,36 +280,29 @@ ul li {
   text-align: left;
   color: var(--white);
   font-size: 0.95rem;
-  max-width: 700px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .add-ons-list li {
   margin-bottom: 12px;
 }
-.add-ons.fade-in-up {
-  animation: fadeInUp 1.2s ease-in-out;
-}
 
 .add-ons-cta {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.add-ons-cta .btn-tier {
+  display: inline-block;
   background-color: var(--gold);
   color: #000;
-  font-weight: 600;
-  padding: 12px 26px;
+  padding: 10px 22px;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
-.add-ons-cta .btn-tier:hover {
+.add-ons-cta:hover {
   background-color: #f2c94c;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 30px 0;
