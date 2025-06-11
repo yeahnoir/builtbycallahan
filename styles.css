@@ -142,7 +142,7 @@ body {
 }
 
 .section-whatido {
-  background-color: #1c1c1e;
+  background: linear-gradient(to right, #0f1a2b, #162538);
   color: var(--white);
   padding: 80px 20px;
   text-align: left;
