@@ -141,17 +141,21 @@ body {
   box-shadow: 0 0 12px var(--gold);
 }
 
-.section-whatido {
+.section-whatido-wrapper {
   background-color: #111316;
   background-image: radial-gradient(circle at 1px 1px, #222 1px, transparent 0);
   background-size: 12px 12px;
-  color: var(--white);
-  padding: 80px 20px;
-  text-align: left;
+}
+
+.section-whatido {
   max-width: 800px;
   margin: 0 auto;
+  padding: 80px 20px;
+  color: var(--white);
+  text-align: left;
   animation: fadeInUp 1.4s ease-in-out;
 }
+
 
 .section-whatido h2 {
   font-family: 'Playfair Display', serif;
