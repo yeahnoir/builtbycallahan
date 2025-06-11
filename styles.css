@@ -244,6 +244,10 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
+.services-section {
+  padding-bottom: 40px;
+}
+
 .premium {
   border: 2px solid var(--gold);
 }
