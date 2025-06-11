@@ -301,6 +301,60 @@ ul li {
 .add-ons-cta:hover {
   background-color: #f2c94c;
 }
+/* ABOUT SECTION */
+.about-section {
+  padding: 100px 20px;
+  background-color: #0f0f11;
+  color: var(--white);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.about-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--gold);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  color: #ddd;
+  position: relative;
+  z-index: 1;
+}
+
+.about-signature {
+  position: relative;
+  margin-top: -60px;
+  text-align: center;
+  z-index: 0;
+}
+
+.about-signature img {
+  max-width: 280px;
+  height: auto;
+  opacity: 0.9;
+  mix-blend-mode: lighten;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Footer */
 .footer {
