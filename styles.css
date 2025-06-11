@@ -344,6 +344,28 @@ ul li {
 .add-ons-list li {
   margin-bottom: 12px;
 }
+.add-ons.fade-in-up {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.add-ons-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.add-ons-cta .btn-tier {
+  background-color: var(--gold);
+  color: #000;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.add-ons-cta .btn-tier:hover {
+  background-color: #f2c94c;
+}
 
 .footer {
   text-align: center;
