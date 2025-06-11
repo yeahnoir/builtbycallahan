@@ -1,5 +1,10 @@
-// Scroll animations, parallax effect, etc.
-window.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollY;
-    // Add parallax effect or animations
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
