@@ -512,14 +512,66 @@
   }
 </style>
   
-  <!-- Footer -->
-  <footer class="footer">
+ <!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-content">
     <p>&copy; 2025 Built By Callahan. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    <div class="footer-signature-container">
+      <svg viewBox="0 0 600 100" class="signature-svg">
+        <path d="M50,50 Q150,0 250,50 T450,50" stroke="#d4af37" stroke-width="3" fill="transparent"/>
+      </svg>
+      <img src="/images/your-signature-file.png" alt="Sarah Callahan Signature" class="footer-signature" />
+    </div>
+  </div>
+</footer>
 
-    <p>&copy; 2025 Built By Callahan. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<style>
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0a1423;
+  font-size: 0.9rem;
+  color: #aaa;
+  position: relative;
+}
+
+.footer-signature-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.footer-signature {
+  width: 200px;
+  opacity: 0;
+  animation: drawSignature 2s ease forwards;
+  transition: box-shadow 0.3s ease;
+}
+
+.footer-signature:hover {
+  box-shadow: 0 0 15px #d4af37;
+}
+
+.signature-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawPath 2s ease forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawSignature {
+  to {
+    opacity: 1;
+  }
+}
+</style>
