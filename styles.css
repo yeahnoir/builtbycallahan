@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #34495e;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cta-btn {
+    padding: 15px 25px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-tiers {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #ecf0f1;
+}
+
+.tier {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.tiers h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tiers p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.sticky-btn {
+    padding: 15px 25px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sticky-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Add more CSS as needed */
