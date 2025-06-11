@@ -348,6 +348,71 @@
     });
   });
 </script>
+
+<!-- CONTACT / BOOKING FORM SECTION -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Let’s Build Something Great</h2>
+    <p>Fill out the form and I’ll get back to you as soon as possible.</p>
+
+    <form class="booking-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="businessName">Business Name</label>
+          <input type="text" id="businessName" placeholder="Business or brand">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number <span>(optional)</span></label>
+          <input type="text" id="phone" placeholder="(123) 456-7890">
+        </div>
+        <div class="form-group full-width">
+          <label for="package">Which package are you interested in?</label>
+          <select id="package">
+            <option value="">Select a package</option>
+            <option>The Local Pro Starter</option>
+            <option>Lead Funnel Builder</option>
+            <option>Business Booster</option>
+            <option>Full Site Pro Build</option>
+            <option>Monthly Website Management</option>
+            <option>Ecommerce Conversion Site</option>
+            <option>Not sure yet – help me decide</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Tell me what you need help with</label>
+          <textarea id="message" rows="5" placeholder="Describe your vision..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="contactMethod">Preferred Contact Method</label>
+          <select id="contactMethod">
+            <option value="">Choose one</option>
+            <option>Email</option>
+            <option>Phone Call</option>
+            <option>Text Message</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="timeline">How soon do you want to launch?</label>
+          <input type="text" id="timeline" placeholder="e.g. ASAP, within 2 weeks...">
+        </div>
+        <div class="form-group full-width">
+          <label for="budget">Budget Range</label>
+          <input type="text" id="budget" placeholder="$100 - $1,000+">
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
   
   <!-- Footer -->
   <footer class="footer">
