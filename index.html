@@ -8,49 +8,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .hero-tagline {
-      margin-top: -10px;
-    }
-    .section-whatido {
-      background-color: #1c1c1e;
-      color: var(--white);
-      padding: 80px 20px;
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-      animation: fadeInUp 1.4s ease-in-out;
-    }
+<style>
+  .section-whatido-wrapper {
+    width: 100vw;
+    background-color: #111316;
+    background-image: radial-gradient(circle at 1px 1px, #222 1px, transparent 0);
+    background-size: 12px 12px;
+    padding: 80px 0;
+  }
 
-    .section-whatido h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: var(--gold);
-      margin-bottom: 30px;
-    }
+  .section-whatido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--white);
+    text-align: left;
+    animation: fadeInUp 1.4s ease-in-out;
+  }
 
-    .section-whatido p {
-      font-size: 1rem;
-      line-height: 1.75;
-      margin-bottom: 24px;
-    }
+  .section-whatido h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--gold);
+    margin-bottom: 30px;
+  }
 
-    .section-whatido strong {
-      color: var(--gold);
-      font-weight: 600;
-    }
+  .section-whatido p {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  .section-whatido strong {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
     }
-  </style>
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 </head>
 <body>
   <!-- Hero Section -->
@@ -68,15 +72,6 @@
   </header>
 
   <!-- What I Do Section -->
-  <section class="section-whatido-wrapper">
-  <div class="section-whatido">
-    <h2>What I Do</h2>
-    <p>...</p>
-    <h2>Why It Matters</h2>
-    <p>...</p>
-  </div>
-</section>
-
   <section class="section-whatido">
     <h2>What I Do</h2>
     <p>I design <strong>landing pages and mini websites</strong> that help small business owners build a real online presence. Whether you're a barber, realtor, stylist, or running a niche shop — if you need a site that actually looks good and works, I’ve got you covered.</p>
