@@ -184,51 +184,168 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
+<!-- SERVICES SECTION -->
+<section class="services-section">
+  <div class="services-intro">
+    <h2>Choose Your Build</h2>
+    <p>Whether you’re just starting out or ready to dominate your niche, there’s a package tailored to meet you where you are.</p>
+  </div>
 
-.services {
-  padding: 80px 20px;
-  background-color: #121f34;
-  text-align: center;
-}
+  <div class="service-cards">
+    <!-- Tier 1 -->
+    <div class="service-card">
+      <h3 class="tier-name">The Local Pro Starter</h3>
+      <p class="price">$97</p>
+      <p class="tier-description">Perfect for small business owners who need a clean, mobile-optimized online presence without the hassle.</p>
+      <ul>
+        <li>✅ One-page mobile-first design</li>
+        <li>✅ Your business info: hours, services, location</li>
+        <li>✅ Embedded Google map</li>
+        <li>✅ Direct contact button (email/call/text)</li>
+      </ul>
+      <p class="closing-line">Ideal for barbers, stylists, tradespeople & boutiques.</p>
+      <a href="#contact" class="btn-tier">Book This Tier</a>
+    </div>
 
-.services h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-}
+    <!-- Tier 2 -->
+    <div class="service-card">
+      <h3 class="tier-name">Lead Funnel Builder</h3>
+      <p class="price">$197</p>
+      <p class="tier-description">For businesses ready to grow their leads and convert visitors with social proof and strategy.</p>
+      <ul>
+        <li>✅ Everything in Local Pro Starter</li>
+        <li>✅ Reviews & testimonials section</li>
+        <li>✅ Lead capture form (email/phone collection)</li>
+        <li>✅ Layout optimized for Facebook/Instagram ads</li>
+      </ul>
+      <p class="closing-line">Great for realtors, wellness pros, and service providers.</p>
+      <a href="#contact" class="btn-tier">Book This Tier</a>
+    </div>
 
-.service-card {
-  background-color: #1b2a44;
-  margin: 20px auto;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 500px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
+    <!-- Tier 3 -->
+    <div class="service-card premium">
+      <h3 class="tier-name">Business Booster</h3>
+      <p class="price">$297</p>
+      <p class="tier-description">The full works — built for those who want high-converting copy, scroll animations, and deep performance tracking.</p>
+      <ul>
+        <li>✅ Everything in Lead Funnel Builder</li>
+        <li>✅ Full conversion-optimized copywriting</li>
+        <li>✅ Email opt-in integration</li>
+        <li>✅ Scroll animations & interactive sections</li>
+        <li>✅ Google Analytics + conversion tracking</li>
+      </ul>
+      <p class="closing-line">Built to impress and built to scale.</p>
+      <a href="#contact" class="btn-tier">Book This Tier</a>
+    </div>
+  </div>
+</section>
 
-.service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
+<style>
+  .services-section {
+    padding: 100px 20px;
+    background-color: #0f0f11;
+    color: var(--white);
+    text-align: center;
+  }
 
-.price {
-  color: var(--gold);
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
+  .services-intro {
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
 
-.service-card ul {
-  list-style: none;
-  padding: 0;
-}
+  .services-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
 
-.service-card ul li {
-  margin: 10px 0;
-  color: #ddd;
-  font-size: 0.95rem;
-}
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (min-width: 900px) {
+    .service-cards {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .service-card {
+    background-color: #18181b;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .premium {
+    border: 2px solid var(--gold);
+  }
+
+  .tier-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .tier-description {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #ccc;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+
+  .closing-line {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+
+  .btn-tier {
+    display: inline-block;
+    background-color: var(--gold);
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-tier:hover {
+    background-color: #f2c94c;
+  }
+</style>
+
 
 .footer {
   text-align: center;
