@@ -185,7 +185,7 @@ body {
   }
 }
 
-  /* SERVICES SECTION */
+ /* SERVICES SECTION */
 .services-section {
   padding: 100px 20px;
   background-color: #0f0f11;
@@ -219,8 +219,13 @@ body {
 
 @media (min-width: 900px) {
   .service-cards {
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .service-card {
+    max-width: 320px;
   }
 }
 
@@ -230,7 +235,6 @@ body {
   border-radius: 16px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   flex: 1;
-  max-width: 320px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0 auto;
 }
@@ -295,8 +299,9 @@ ul li {
 
 .btn-tier:hover {
   background-color: #f2c94c;
-  }
+}
 
+/* ADD-ONS BLOCK */
 .add-ons {
   margin-top: 60px;
   padding: 30px 20px;
@@ -305,7 +310,7 @@ ul li {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .add-ons-title {
