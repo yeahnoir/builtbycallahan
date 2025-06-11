@@ -414,6 +414,104 @@
   </div>
 </section>
   
+  <!-- PORTFOLIO SECTION -->
+<section class="portfolio-section">
+  <div class="portfolio-header">
+    <h2>My Work</h2>
+    <p>A few projects that show what Built By Callahan can do.</p>
+  </div>
+
+  <div class="portfolio-carousel">
+    <div class="carousel-track">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Landing+Page+1" alt="Project 1">
+        <h4>Landing Page Design</h4>
+        <p>Clean, mobile-first design for a wellness brand.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Website+Redesign" alt="Project 2">
+        <h4>Website Redesign</h4>
+        <p>Multi-page build for a local photographer with custom booking features.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Ecommerce+Mockup" alt="Project 3">
+        <h4>Ecommerce Storefront</h4>
+        <p>Product-focused landing page with high-conversion layout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .portfolio-section {
+    padding: 100px 20px;
+    background-color: #111316;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .portfolio-header {
+    margin-bottom: 60px;
+  }
+
+  .portfolio-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .portfolio-header p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  .portfolio-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+    scroll-snap-align: start;
+    padding-bottom: 20px;
+  }
+
+  .portfolio-item {
+    background-color: #18181b;
+    border-radius: 12px;
+    min-width: 300px;
+    flex: none;
+    scroll-snap-align: center;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-item:hover {
+    transform: scale(1.03);
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-item h4 {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .portfolio-item p {
+    color: #bbb;
+    font-size: 0.95rem;
+  }
+</style>
+  
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 Built By Callahan. All rights reserved.</p>
