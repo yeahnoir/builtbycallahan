@@ -58,152 +58,275 @@
 </head>
 <body>
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <div class="particles">
-        <span></span><span></span><span></span>
-      </div>
+ <header class="hero-section">
+  <div class="hero-overlay">
+    <div class="particles-bg">
+      <span></span><span></span><span></span>
     </div>
-    <div class="hero-content">
-      <img src="logo.png" alt="Built By Callahan Logo" class="hero-logo" />
-      <h2 class="hero-tagline">Elegant design for businesses built to last.</h2>
-      <a href="#services" class="cta-btn">See Packages</a>
-    </div>
-  </header>
+  </div>
+  <div class="hero-content fade-in-up">
+    <img src="logo.png" alt="Built By Callahan Logo" class="hero-logo" />
+    <h1 class="hero-headline">Elegant design for businesses built to last.</h1>
+    <a href="#services" class="cta-button">See Packages</a>
+  </div>
+</header>
 
   <!-- What I Do Section -->
-  <section class="section-whatido">
+<section class="what-i-do-section fade-in-up">
+  <div class="what-i-do-container">
     <h2>What I Do</h2>
     <p>I design <strong>landing pages and mini websites</strong> that help small business owners build a real online presence. Whether you're a barber, realtor, stylist, or running a niche shop — if you need a site that actually looks good and works, I’ve got you covered.</p>
+
     <p>This isn’t some quick Wix template or a Fiverr rush job. I take time with every build because I know how <strong>overwhelming</strong> it is to run a business <em>and</em> try to piece together a decent website. That’s where I come in — so you can focus on your craft while I build the online space your brand deserves.</p>
+
     <h2>Why It Matters</h2>
     <p>Social media only shows so much — and it all looks the same. A custom landing page gives you <strong>creative freedom</strong> to express your brand and connect with customers in a way Instagram never could.</p>
+
     <p>In 2025, if people can’t find you online, they won’t trust you. With the right site, you build credibility, boost conversions, and create <strong>email capture</strong> systems that grow your customer base for the long run.</p>
-  </section>
+  </div>
+</section>
+
+  <!-- PORTFOLIO SECTION -->
+<section class="portfolio-section" id="portfolio">
+  <div class="portfolio-header">
+    <h2>My Work</h2>
+    <p>A few projects that show what Built By Callahan can do.</p>
+  </div>
+
+  <div class="portfolio-carousel">
+    <div class="carousel-track">
+      <!-- Project 1 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Landing+Page+1" alt="Project 1">
+        <h4>Landing Page Design</h4>
+        <p>Clean, mobile-first design for a wellness brand.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Website+Redesign" alt="Project 2">
+        <h4>Website Redesign</h4>
+        <p>Multi-page site for a local photographer with booking integration.</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Ecommerce+Mockup" alt="Project 3">
+        <h4>Ecommerce Storefront</h4>
+        <p>Custom storefront built for digital product sales via Gumroad.</p>
+      </div>
+    </div>
+  </div>
+</section>
   
-<!-- SERVICES SECTION -->
+<!-- SECTION: Services (Updated Layout with Animations and Flow) -->
 <section class="services-section">
   <div class="services-intro">
     <h2>Choose Your Build</h2>
     <p>Whether you’re just starting out or ready to dominate your niche, there’s a package tailored to meet you where you are.</p>
   </div>
 
-  <div class="service-cards">
-    <!-- Tier 1 -->
-    <div class="service-card" style="animation-delay: 0.1s;">
+  <div class="services-grid">
+    <!-- Row 1 -->
+    <div class="service-card tier1">
       <h3 class="tier-name">The Local Pro Starter</h3>
       <p class="price">$147</p>
       <p class="tier-description">Perfect for small business owners who need a clean, mobile-optimized online presence without the hassle.</p>
       <ul>
-        <li>✅ One-page mobile-first design</li>
-        <li>✅ Business essentials: hours, services, location</li>
-        <li>✅ Embedded Google map</li>
-        <li>✅ Direct contact button (email/call/text)</li>
+        <li>One-page mobile-first design</li>
+        <li>Business essentials: hours, services, location</li>
+        <li>Embedded Google map</li>
+        <li>Direct contact button (email/call/text)</li>
       </ul>
-      <p class="closing-line">Ideal for barbers, stylists, tradespeople & boutiques.</p>
       <a href="#contact" class="btn-tier">Book This Tier</a>
     </div>
 
-    <!-- Tier 2 -->
-    <div class="service-card" style="animation-delay: 0.2s;">
+    <div class="service-card tier2">
       <h3 class="tier-name">Lead Funnel Builder</h3>
       <p class="price">$247</p>
       <p class="tier-description">For businesses ready to grow their leads and convert visitors with social proof and strategy.</p>
       <ul>
-        <li>✅ Everything in Local Pro Starter</li>
-        <li>✅ Reviews & testimonials section</li>
-        <li>✅ Lead capture form (email/phone collection)</li>
-        <li>✅ Layout optimized for Facebook/Instagram ads</li>
+        <li>Everything in Local Pro Starter</li>
+        <li>Reviews & testimonials section</li>
+        <li>Lead capture form (email/phone collection)</li>
+        <li>Layout optimized for Facebook/Instagram ads</li>
       </ul>
-      <p class="closing-line">Great for realtors, wellness pros, and service providers.</p>
       <a href="#contact" class="btn-tier">Book This Tier</a>
     </div>
 
-    <!-- Tier 3 -->
-    <div class="service-card premium" style="animation-delay: 0.3s;">
+    <div class="service-card tier3 premium">
       <h3 class="tier-name">Business Booster</h3>
       <p class="price">$397</p>
       <p class="tier-description">Built for those ready to scale with high-converting copy, animation, and strategy.</p>
       <ul>
-        <li>✅ Everything in Lead Funnel Builder</li>
-        <li>✅ Conversion-optimized copywriting</li>
-        <li>✅ Email opt-in integration</li>
-        <li>✅ Scroll animations & interactive sections</li>
-        <li>✅ Google Analytics + conversion tracking</li>
+        <li>Everything in Lead Funnel Builder</li>
+        <li>Conversion-optimized copywriting</li>
+        <li>Email opt-in integration</li>
+        <li>Scroll animations & interactive sections</li>
+        <li>Google Analytics + conversion tracking</li>
       </ul>
-      <p class="closing-line">Built to impress and built to scale.</p>
       <a href="#contact" class="btn-tier">Book This Tier</a>
     </div>
 
-    <!-- Tier 4 -->
-    <div class="service-card" style="animation-delay: 0.4s;">
+    <!-- Row 2 -->
+    <div class="service-card tier4">
       <h3 class="tier-name">Full Website Build</h3>
       <p class="price">$897+</p>
       <p class="tier-description">Complete multi-page website tailored to your brand and goals.</p>
       <ul>
-        <li>✅ Custom homepage + up to 5 pages (services, about, etc.)</li>
-        <li>✅ Designed to convert with strong calls-to-action</li>
-        <li>✅ Mobile and SEO optimized</li>
-        <li>✅ Includes brand styling and animation</li>
+        <li>Custom homepage + up to 5 pages</li>
+        <li>Designed to convert with strong CTAs</li>
+        <li>Mobile and SEO optimized</li>
+        <li>Includes brand styling and animation</li>
       </ul>
-      <p class="closing-line">For professionals, agencies, and growing teams.</p>
       <a href="#contact" class="btn-tier">Book This Tier</a>
     </div>
 
-    <!-- Tier 5 -->
-    <div class="service-card" style="animation-delay: 0.5s;">
+    <div class="service-card tier5">
       <h3 class="tier-name">Monthly Website Care</h3>
       <p class="price">$147/mo</p>
       <p class="tier-description">Ongoing care so your website stays fast, fresh, and secure.</p>
       <ul>
-        <li>✅ Monthly updates & backups</li>
-        <li>✅ Minor edits or content swaps</li>
-        <li>✅ Speed optimization checks</li>
-        <li>✅ Priority troubleshooting support</li>
+        <li>Monthly updates & backups</li>
+        <li>Minor edits or content swaps</li>
+        <li>Speed optimization checks</li>
+        <li>Priority troubleshooting support</li>
       </ul>
-      <p class="closing-line">Best for business owners who don’t have time to DIY.</p>
       <a href="#contact" class="btn-tier">Book This Plan</a>
     </div>
 
-    <!-- Tier 6 -->
-    <div class="service-card premium" style="animation-delay: 0.6s;">
+    <div class="service-card tier6 premium">
       <h3 class="tier-name">Ecommerce Essentials</h3>
       <p class="price">$697+</p>
       <p class="tier-description">Everything you need to start selling online with confidence.</p>
       <ul>
-        <li>✅ Custom ecommerce landing page</li>
-        <li>✅ Product display & conversion sections</li>
-        <li>✅ Integrated with Shopify, Gumroad, or Payhip</li>
-        <li>✅ Email capture and cart setup</li>
+        <li>Custom ecommerce landing page</li>
+        <li>Product display & conversion sections</li>
+        <li>Integrated with Shopify, Gumroad, or Payhip</li>
+        <li>Email capture and cart setup</li>
       </ul>
-      <p class="closing-line">Great for course creators, shops & digital products.</p>
       <a href="#contact" class="btn-tier">Book This Tier</a>
     </div>
   </div>
 </section>
 
-<!-- ADD-ONS -->
-<section class="add-ons fade-in-up">
-  <h3 class="add-ons-title">Add-Ons</h3>
-  <p class="add-ons-intro">Customize your package with these extras to boost your site’s performance and polish.</p>
-  <ul class="add-ons-list">
-    <li>+ Booking system setup (Calendly or Square) – <strong>$35</strong></li>
-    <li>+ Google Business Profile optimization – <strong>$50</strong></li>
-    <li>+ Facebook Page setup & branding – <strong>$45</strong></li>
-    <li>+ One-on-one brand coaching call – <strong>$65</strong></li>
-    <li>+ Email marketing setup (MailerLite or Mailchimp) – <strong>$60</strong></li>
-    <li>+ Copy audit or full rewrite – <strong>$75</strong></li>
-  </ul>
+<!-- CSS to go with layout -->
+<style>
+.services-section {
+  padding: 80px 20px;
+  background-color: #0d0f13;
+  color: #fff;
+  text-align: center;
+}
+.services-intro h2 {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+.services-intro p {
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.service-card {
+  background: #181a1f;
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  animation: fadeInUp 1s ease both;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+.service-card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.service-card .price {
+  color: #ccc;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.service-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.btn-tier {
+  background: linear-gradient(90deg, #d4af37, #b4912e);
+  color: #111;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+.btn-tier:hover {
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
 
-  <div class="add-ons-cta">
-    <a href="#contact" class="btn-tier">Book an Add-On</a>
+<!-- ADD-ONS SECTION -->
+<section class="add-ons-section fade-in-up">
+  <div class="container">
+    <h2 class="section-title">Add-Ons</h2>
+    <p class="section-subtitle">Customize your package with premium extras to boost performance and polish.</p>
+
+    <ul class="add-ons-list">
+      <li>
+        <span class="add-on-name">+ Booking system setup (Calendly or Square)</span>
+        <span class="add-on-price">$35</span>
+      </li>
+      <li>
+        <span class="add-on-name">+ Google Business Profile optimization</span>
+        <span class="add-on-price">$50</span>
+      </li>
+      <li>
+        <span class="add-on-name">+ Facebook Page setup & branding</span>
+        <span class="add-on-price">$45</span>
+      </li>
+      <li>
+        <span class="add-on-name">+ One-on-one brand coaching call</span>
+        <span class="add-on-price">$65</span>
+      </li>
+      <li>
+        <span class="add-on-name">+ Email marketing setup (MailerLite or Mailchimp)</span>
+        <span class="add-on-price">$60</span>
+      </li>
+      <li>
+        <span class="add-on-name">+ Copy audit or full rewrite</span>
+        <span class="add-on-price">$75</span>
+      </li>
+    </ul>
+
+    <div class="add-ons-cta">
+      <a href="#contact" class="btn-tier gold-button">Book an Add-On</a>
+    </div>
   </div>
 </section>
-  
-  <!-- ABOUT SECTION -->
-<section class="about-section">
-  <div class="about-content">
-    <h2>About Built By Callahan</h2>
+
+<!-- ABOUT ME SECTION -->
+<section class="about-section fade-in-up" id="about">
+  <div class="container about-content">
+    <h2 class="section-title">About Built By Callahan</h2>
 
     <p>I help business owners showcase their brand — especially the ones who have no idea where to start. My goal is to take the pressure off and deliver a digital presence that feels reputable, polished, and deeply aligned with your vision.</p>
 
@@ -214,165 +337,108 @@
     <p>From social media marketing and ad development to web design and storytelling — I bring brands to life online with intent, clarity, and style.</p>
 
     <div class="about-signature">
-      <img src="your-signature-file.png" alt="Sarah Callahan signature" />
+      <img src="images/signature-gold.png" alt="Sarah Callahan Signature" />
     </div>
   </div>
 </section>
-
-<style>
-  .about-section {
-    padding: 100px 20px;
-    background-color: #0f0f11;
-    color: var(--white);
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    animation: fadeInUp 1.4s ease-in-out;
-  }
-
-  .about-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    color: var(--gold);
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .about-section p {
-    font-size: 1rem;
-    line-height: 1.75;
-    margin-bottom: 24px;
-    color: #ddd;
-    position: relative;
-    z-index: 1;
-  }
-
-  .about-signature {
-    position: relative;
-    margin-top: -60px;
-    text-align: center;
-    z-index: 0;
-  }
-
-  .about-signature img {
-    max-width: 280px;
-    height: auto;
-    opacity: 0.9;
-    mix-blend-mode: lighten;
-    animation: fadeInUp 1.5s ease-in-out;
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
   
 <!-- FAQ SECTION -->
-<section class="faq-section">
+<section class="faq-section" id="faq">
   <div class="faq-container">
     <h2 class="faq-heading">Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <div class="faq-question">What if I don't know what I want in a website?</div>
+      <button class="faq-question">What if I don't know what I want in a website?</button>
       <div class="faq-answer">
-        I walk you through a simple personality questionnaire to help uncover your vision. It’s my job to turn your ideas into a clear, stunning site — even if you’re unsure how to describe it.
+        <p>I walk you through a simple personality questionnaire to help uncover your vision. It’s my job to turn your ideas into a clear, stunning site — even if you’re unsure how to describe it.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">How fast will my site be finished?</div>
+      <button class="faq-question">How fast will my site be finished?</button>
       <div class="faq-answer">
-        Turnaround depends on the package. Landing pages: ~3 days after questionnaire. Full websites: 1–2 weeks. Ecommerce: 2+ weeks. Revisions and my workload may affect timing.
+        <p>Landing pages are usually done within 3 days of the questionnaire being submitted. Full websites take 1–2 weeks. Ecommerce builds vary, depending on product complexity.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">What if I don’t have a logo?</div>
+      <button class="faq-question">What if I don’t have a logo?</button>
       <div class="faq-answer">
-        I offer logo design as an add-on or can use a professional placeholder until you’re ready. I also offer full branding support if needed.
+        <p>I can design one for an added fee — or provide a clean placeholder until you’re ready. Full branding help is also available.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">Will I have access to my site?</div>
+      <button class="faq-question">Will I have access to my site?</button>
       <div class="faq-answer">
-        Yes. You’ll receive full access with instructions on how to update content, add images, or request help.
+        <p>Yes. You’ll have full access with instructions. You're free to make edits or hand it back to me for updates anytime.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">Do you use WordPress?</div>
+      <button class="faq-question">Do you use WordPress?</button>
       <div class="faq-answer">
-        Yes. All of my builds are based on WordPress for long-term flexibility. I also use custom code where needed, especially for high-performance landing pages and animations.
+        <p>Yes — I build most sites on WordPress using custom code and visuals. It allows for flexibility and long-term scalability.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">How do revisions work?</div>
+      <button class="faq-question">How do revisions work?</button>
       <div class="faq-answer">
-        Each package includes a revision cap: 10 for landing pages, 15 for ecommerce, and 25 for full websites. Most people never hit the cap.
+        <p>Landing pages come with 10 revision sessions. Ecommerce gets 15. Full sites get 25. Most clients don’t need that many — but it’s there if you do.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">Can I request copywriting?</div>
+      <button class="faq-question">Can I request copywriting?</button>
       <div class="faq-answer">
-        Yes, you can add professional copywriting as an optional service. I’ll handle it for you based on your brand’s voice and goals.
+        <p>Yes — I offer full copywriting as an add-on. Just let me know your tone and offer, and I’ll write something that converts.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">Will it work on mobile?</div>
+      <button class="faq-question">Will it work on mobile?</button>
       <div class="faq-answer">
-        Absolutely. All websites are fully mobile responsive, optimized for speed and clarity on any device.
+        <p>Absolutely. Every site I build is mobile responsive and speed-tested for performance across all devices.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ JS -->
-<script>
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    item.querySelector('.faq-question').addEventListener('click', () => {
-      item.classList.toggle('open');
-    });
-  });
-</script>
 
 <!-- CONTACT / BOOKING FORM SECTION -->
 <section class="contact-section" id="contact">
   <div class="contact-container">
-    <h2>Let’s Build Something Great</h2>
-    <p>Fill out the form and I’ll get back to you as soon as possible.</p>
+    <h2 class="contact-heading">Let’s Build Something Great</h2>
+    <p class="contact-subtext">Fill out the form and I’ll get back to you as soon as possible.</p>
 
     <form class="booking-form">
       <div class="form-grid">
+        <!-- Full Name -->
         <div class="form-group">
           <label for="fullName">Full Name</label>
           <input type="text" id="fullName" placeholder="Your name" required>
         </div>
+
+        <!-- Business Name -->
         <div class="form-group">
           <label for="businessName">Business Name</label>
           <input type="text" id="businessName" placeholder="Business or brand">
         </div>
+
+        <!-- Email -->
         <div class="form-group">
           <label for="email">Email Address</label>
           <input type="email" id="email" placeholder="you@email.com" required>
         </div>
+
+        <!-- Phone -->
         <div class="form-group">
           <label for="phone">Phone Number <span>(optional)</span></label>
           <input type="text" id="phone" placeholder="(123) 456-7890">
         </div>
+
+        <!-- Package Selection -->
         <div class="form-group full-width">
           <label for="package">Which package are you interested in?</label>
           <select id="package">
@@ -380,16 +446,20 @@
             <option>The Local Pro Starter</option>
             <option>Lead Funnel Builder</option>
             <option>Business Booster</option>
-            <option>Full Site Pro Build</option>
-            <option>Monthly Website Management</option>
-            <option>Ecommerce Conversion Site</option>
+            <option>Full Website Build</option>
+            <option>Monthly Website Care</option>
+            <option>Ecommerce Essentials</option>
             <option>Not sure yet – help me decide</option>
           </select>
         </div>
+
+        <!-- Message -->
         <div class="form-group full-width">
           <label for="message">Tell me what you need help with</label>
           <textarea id="message" rows="5" placeholder="Describe your vision..."></textarea>
         </div>
+
+        <!-- Contact Method -->
         <div class="form-group">
           <label for="contactMethod">Preferred Contact Method</label>
           <select id="contactMethod">
@@ -399,179 +469,36 @@
             <option>Text Message</option>
           </select>
         </div>
+
+        <!-- Launch Timeline -->
         <div class="form-group">
           <label for="timeline">How soon do you want to launch?</label>
           <input type="text" id="timeline" placeholder="e.g. ASAP, within 2 weeks...">
         </div>
+
+        <!-- Budget -->
         <div class="form-group full-width">
           <label for="budget">Budget Range</label>
           <input type="text" id="budget" placeholder="$100 - $1,000+">
         </div>
       </div>
 
+      <!-- Submit Button -->
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </div>
 </section>
-  
-  <!-- PORTFOLIO SECTION -->
-<section class="portfolio-section">
-  <div class="portfolio-header">
-    <h2>My Work</h2>
-    <p>A few projects that show what Built By Callahan can do.</p>
-  </div>
 
-  <div class="portfolio-carousel">
-    <div class="carousel-track">
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Landing+Page+1" alt="Project 1">
-        <h4>Landing Page Design</h4>
-        <p>Clean, mobile-first design for a wellness brand.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Website+Redesign" alt="Project 2">
-        <h4>Website Redesign</h4>
-        <p>Multi-page build for a local photographer with custom booking features.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/300x200?text=Ecommerce+Mockup" alt="Project 3">
-        <h4>Ecommerce Storefront</h4>
-        <p>Product-focused landing page with high-conversion layout.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  .portfolio-section {
-    padding: 100px 20px;
-    background-color: #111316;
-    color: var(--white);
-    text-align: center;
-  }
-
-  .portfolio-header {
-    margin-bottom: 60px;
-  }
-
-  .portfolio-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: var(--gold);
-    margin-bottom: 10px;
-  }
-
-  .portfolio-header p {
-    font-size: 1rem;
-    color: #ccc;
-  }
-
-  .portfolio-carousel {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .carousel-track {
-    display: flex;
-    gap: 20px;
-    scroll-snap-align: start;
-    padding-bottom: 20px;
-  }
-
-  .portfolio-item {
-    background-color: #18181b;
-    border-radius: 12px;
-    min-width: 300px;
-    flex: none;
-    scroll-snap-align: center;
-    padding: 20px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-
-  .portfolio-item:hover {
-    transform: scale(1.03);
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-
-  .portfolio-item h4 {
-    color: var(--gold);
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-  }
-
-  .portfolio-item p {
-    color: #bbb;
-    font-size: 0.95rem;
-  }
-</style>
-  
  <!-- FOOTER SECTION -->
 <footer class="footer">
   <div class="footer-content">
     <p>&copy; 2025 Built By Callahan. All rights reserved.</p>
+
     <div class="footer-signature-container">
       <svg viewBox="0 0 600 100" class="signature-svg">
         <path d="M50,50 Q150,0 250,50 T450,50" stroke="#d4af37" stroke-width="3" fill="transparent"/>
       </svg>
-      <img src="/images/your-signature-file.png" alt="Sarah Callahan Signature" class="footer-signature" />
+      <img src="images/your-signature-file.png" alt="Sarah Callahan Signature" class="footer-signature" />
     </div>
   </div>
 </footer>
-
-<style>
-.footer {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #0a1423;
-  font-size: 0.9rem;
-  color: #aaa;
-  position: relative;
-}
-
-.footer-signature-container {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.footer-signature {
-  width: 200px;
-  opacity: 0;
-  animation: drawSignature 2s ease forwards;
-  transition: box-shadow 0.3s ease;
-}
-
-.footer-signature:hover {
-  box-shadow: 0 0 15px #d4af37;
-}
-
-.signature-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100px;
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  animation: drawPath 2s ease forwards;
-}
-
-@keyframes drawPath {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes drawSignature {
-  to {
-    opacity: 1;
-  }
-}
-</style>
